@@ -1,0 +1,92 @@
+\documentclass{article}
+
+% http://www.tug.dk/FontCatalogue/
+
+\usepackage[T1]{fontenc}
+%\usepackage{times}
+%\usepackage{bookman}
+%\usepackage{aurical} % \Fontlukas
+%\usepackage{va} % \va
+%\usepackage{aurical}
+%\usepackage[adobe-utopia]{mathdesign}
+\usepackage{libertine}
+\usepackage{lmodern} \renewcommand*\familydefault{\ttdefault}
+%\usepackage[scaled]{helvet}
+%\font\comicsans=ComicSansMS at 18pt
+
+\usepackage{tikz}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{setspace}
+
+\usepackage[margin=0.5in]{geometry}
+
+\usetikzlibrary{decorations.text}
+
+
+%\geometry{paperwidth=6.25in,paperheight=4.1in}
+
+\newcommand{\phd}[1]{\textbf{#1}, PhD.}
+\newcommand{\cphil}[1]{\textbf{#1}, C.Phil.}
+\newcommand{\ms}[1]{#1, M.S.}
+
+\begin{document}
+\noindent\begin{tikzpicture}
+    %[font=\huge\Fontskrivan\setstretch{0.8}]
+    [font=\huge\setstretch{0.85}]
+
+%\draw (6in,-2in) node [rotate=90, anchor=south] 
+%    {\fontsize{68}{68}\selectfont\textbf{SCIENCE!}};
+
+%\draw (4.95in, -2in) node {\includegraphics{packet-inspector.jpg}};
+\draw (4.8in, -4.05in) [anchor=south]node {\includegraphics[scale=0.85]{HAL9000.png}};
+
+% The outline box.
+\draw (0in,0in) rectangle (6.0in,-4in) [color=gray];
+
+
+% The name box
+\draw (0in,-4in) node
+    [
+     anchor=south west,
+     text width=4.5in,
+    ]
+{
+\ms{Neha Chachra}\\
+{Rishan Chen}\\
+\ms{Mike Conley}\\
+\ms{Tristan Halvorson}\\
+{Danny Y. Huang}\\
+\cphil{Christos Kozanitis}\\
+{Wilson Lian}\\
+\ms{He ``Lonnie'' Liu}\\
+\ms{Keaton Mowery}\\
+\cphil{Radhika Niranjan Mysore}\\
+\cphil{Danny Turner}\\
+{Zhuoer Wang}\\
+};
+% The alum box
+\draw (4.25in,0in) node
+    [
+     anchor=north west,
+     text width=3in,
+     font=\scriptsize
+    ]
+{
+\underline{Hall of Fame}\\
+\phd{Meg Walraed-Sullivan (2012)}\\
+\phd{John C. McCullough (2012)}\\
+\phd{Chris Kanich (2012)}\\
+\phd{Cynthia Taylor (2012)}\\
+\phd{Marti Motoyama (2011)}\\
+\phd{Dionysios Logothetis (2011)}\\
+\phd{Mikhail Afanasyev (2009)}\\
+\phd{Marvin McNett (2008)}\\
+\phd{Ramana Kompella (2007)}\\
+\phd{Yu-Chung Cheng (2007)}\\
+\phd{Alper Mizrak (2007)}\\
+\phd{Jeannie Albrecht (2007)}\\
+};
+\end{tikzpicture}
+\end{document}
+
