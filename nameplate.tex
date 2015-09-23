@@ -9,7 +9,7 @@
 %\usepackage{va} % \va
 %\usepackage{aurical}
 %\usepackage[adobe-utopia]{mathdesign}
-\usepackage{libertine}
+%\usepackage{libertine}
 \usepackage{lmodern} \renewcommand*\familydefault{\ttdefault}
 %\usepackage[scaled]{helvet}
 %\font\comicsans=ComicSansMS at 18pt
@@ -46,24 +46,26 @@
 
 
 % The name box
-\draw (0in,-4in) node
+\draw (0in,0in) node
     [
-     anchor=south west,
+     anchor=north west,
      text width=4.5in,
     ]
 {
-\cphil{Neha Chachra}\\
-%{Rishan Chen}\\ % Commented out per discussion 15/4/2015
-\cphil{Mike Conley}\\
-\ms{Joe DeBlasio}\\
-\cphil{Tristan Halvorson}\\
-\ms{Danny Y. Huang}\\
-{David Kohlbrenner}\\
-\cphil{Wilson Lian}\\
-\cphil{Keaton Mowery}\\
-{Edward Sullivan}\\
-%{Zhuoer Wang}\\ % Commented out per discussion 15/4/2015
+    %{Rishan Chen}\\ % Commented out per discussion 15/4/2015
+    \cphil{Neha Chachra}\\
+    \phd{Mike Conley}\\
+    \cphil{Joe DeBlasio}\\
+    {Steven Hill}\\
+    \ms{Danny Y. Huang}\\
+    \ms{David Kohlbrenner}\\
+    \cphil{Wilson Lian}\\
+    {Edward Sullivan}\\
+    %{Zhuoer Wang}\\ % Commented out per discussion 15/4/2015
 };
+
+%\draw (0in, -4.10in) [anchor=south west]node {\includegraphics[scale=0.35]{vacancy-sign-neon.jpg}};
+
 % The alum box
 \draw (4.25in,0in) node
     [
@@ -73,6 +75,11 @@
     ]
 {
 \underline{Hall of Fame}\\
+\phd{Mike Conley (2015)}\\
+\phd{Tristan Halvorson (2015)}\\
+\phd{Keaton Mowery (2015)}\\
+%\phd{Neha Chachra (2015)}\\
+%\phd{Mike Conley (2015)}\\
 \phd{He ``Lonnie'' Liu (2015)}\\
 \phd{Christos Kozanitis (2013)}\\
 \phd{Radhika Mysore (2013)}\\
@@ -82,9 +89,9 @@
 \phd{Chris Kanich (2012)}\\
 \phd{Cynthia Taylor (2012)}\\
 \phd{Marti Motoyama (2011)}\\
-\phd{Dionysios Logothetis (2011)}\\
-\phd{Mikhail Afanasyev (2009)}\\
-\phd{Marvin McNett (2008)}\\
+%\phd{Dionysios Logothetis (2011)}\\
+%\phd{Mikhail Afanasyev (2009)}\\
+%\phd{Marvin McNett (2008)}\\
 };
 \end{tikzpicture}
 \end{document}
